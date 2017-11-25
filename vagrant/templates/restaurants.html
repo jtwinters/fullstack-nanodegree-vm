@@ -4,25 +4,17 @@
 	</head> -->
 
 	<body>
-		<h1>{% print restaurant['name'] %}</h1>
+		<h1>Restaurants</h1>
 
-		<a href = '#'>Create New Item</a>
+		<a href = '#'>Create New Restaurant</a>
 
 		<br>
 
-		{% for item in menu %}
+		{% for restaurant in restaurants %}
 
 			<br>
 
-			{% print item['name'] %}
-
-			<br>
-
-			{% print item['price'] %}
-
-			<br>
-
-			{% print item['description'] %}
+			{% print restaurant['name'] %}
 
 			<br>
 
@@ -33,6 +25,6 @@
 			<br>
 
 		{% endfor %}
-	
 	</body>
+
 </html>
